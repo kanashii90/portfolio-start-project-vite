@@ -1,18 +1,13 @@
-import './App.css'
-import styled from "styled-components";
+// import React from 'react';
+import './App.css';
+import Header from "./components/Header/Header.tsx";
 
-function App() {
+
+ export function App() {
     return (
-        <div className="App">
-            <Title>Welcome to IT-INCUBATOR</Title>
-        </div>
+        <Header />
     )
 }
 
-export default App
 
-const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    color: #e91e63;
-`;
+export default App;
