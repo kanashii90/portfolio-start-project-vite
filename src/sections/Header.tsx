@@ -1,4 +1,4 @@
-import {Container} from "../Container/Containder.tsx";
+import {Container} from "../components/Container.tsx";
 import styled from "styled-components";
 
 
@@ -25,16 +25,16 @@ function HeaderContent(props: any) {
 
 function Logo() {
     return (
-        <a href="/">Logo</a>
+        <a href="/public">Logo</a>
     )
 }
 
 function Navigation() {
     return (
         <StyledNav>
-            <a href="/">Skills</a>
-            <a href="/">Projects</a>
-            <a href="/">Contact me</a>
+            <a href="/public">Skills</a>
+            <a href="/public">Projects</a>
+            <a href="/public">Contact me</a>
         </StyledNav>
     )
 }

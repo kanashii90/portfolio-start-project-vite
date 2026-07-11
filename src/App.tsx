@@ -1,11 +1,24 @@
 // import React from 'react';
 import './App.css';
-import Header from "./components/Header/Header.tsx";
+import Header from "./sections/Header.tsx";
+import Main from "./sections/Main.tsx";
+import Skills from "./sections/Skills.tsx";
+import Projects from "./sections/Projects.tsx";
+import Contact from "./sections/Contact.tsx";
+import Footer from "./sections/Footer.tsx";
 
 
  export function App() {
     return (
-        <Header />
+        <>
+            <Header/>
+            <Main/>
+            <Skills/>
+            <Projects/>
+            <Contact/>
+            <Footer/>
+        </>
+
     )
 }
 
