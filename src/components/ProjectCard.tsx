@@ -22,9 +22,16 @@ function Button() {
 }
 
 const StyledImage = styled.img`
+    width: 100%;
+    display: block;
 `
 
 const StyledDescription = styled.p`
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.87);
 `
 
 const StyledProjectCard = styled.article`
@@ -32,9 +39,9 @@ const StyledProjectCard = styled.article`
     flex-direction: column;
     gap: 19px;
     min-height: 364px;
-    background-color: #262c4d;;
+    background-color: #262c4d;
     padding: 0px 0px 12px;
-    flex-basis: calc((100% - 116px) / 4);
+    flex-basis: calc((100% - 116px) / 3);
     align-items: center;
 `
 
@@ -53,6 +60,7 @@ const StyledButton = styled.button `
     text-align: center;
     color: #fff;
     padding: 8px 16px 14px;
+    margin-top: auto;
 `
 
 export default ProjectCard;
