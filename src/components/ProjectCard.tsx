@@ -2,11 +2,11 @@ import styled from "styled-components";
 import arrowButton from "../../icons/Arrow.svg";
 
 
-function ProjectCard() {
+function ProjectCard(props: any) {
     return (
         <StyledProjectCard>
-                <img/>
-                <p/>
+            <StyledImage src={props.project.image} alt={props.project.imageAlt} />
+            <StyledDescription>{props.project.description}</StyledDescription>
                 <Button/>
         </StyledProjectCard>
     )
@@ -21,6 +21,11 @@ function Button() {
     )
 }
 
+const StyledImage = styled.img`
+`
+
+const StyledDescription = styled.p`
+`
 
 const StyledProjectCard = styled.article`
     display: flex;
@@ -29,8 +34,8 @@ const StyledProjectCard = styled.article`
     min-height: 364px;
     background-color: #262c4d;;
     padding: 0px 0px 12px;
-    flex-basis: calc((100% - 116px) / 3);
-
+    flex-basis: calc((100% - 116px) / 4);
+    align-items: center;
 `
 
 const StyledButton = styled.button `
