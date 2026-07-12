@@ -40,6 +40,7 @@ const StyledMainSection = styled.section`
     padding-top: 134px;
     
     
+    
 `
 const StyledMainContent = styled.div`
     display: flex;

@@ -65,14 +65,16 @@ function ProjectFlex() {
 }
 
 const StyledSectionTitle = styled.div`
-display: flex;
+    display: flex;
+    
 `
 
 
 const StyledProjectsSection = styled.section`
     background-color: #343d68;
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0px auto 74px;
+    
 
 `
 const StyledProjectsContent = styled.div `
@@ -86,6 +88,7 @@ const StyledProjectFlex = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 58px;
+    margin-bottom: 20px;
     
 `
 

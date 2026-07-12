@@ -82,6 +82,8 @@ const StyledSkillsTitle = styled.h2`
 `
 
 const StyledSkillsSection = styled.section`
+    max-width: 1440px;
+    margin: 0px auto 74px;
 `
 const StyledSkillsContent = styled.div`
 `

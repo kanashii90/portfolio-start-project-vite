@@ -49,7 +49,9 @@ function ContactForm() {
 }
 
 
-const StyledContactSection = styled.section``
+const StyledContactSection = styled.section`
+    margin: 0px auto 70px;
+`
 
 const StyledContactTitle = styled.h2`
     text-align: center;
