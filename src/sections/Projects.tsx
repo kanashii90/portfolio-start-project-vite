@@ -1,9 +1,7 @@
 import {Container} from "../components/Container.tsx";
 import ProjectCard from "../components/ProjectCard.tsx";
 import styled from "styled-components";
-
-
-
+import gears from "../../icons/gears-svgrepo-com 2.svg";
 
 function Projects() {
     return (
@@ -21,12 +19,15 @@ function Projects() {
 function SectionTitle () {
     return (
         <StyledSectionTitle>
-            <img src="../../icons/gears-svgrepo-com 2.svg" alt="projects title" />
-            <p>Projects</p>
-            <p>A select number of projects</p>
+            <StyledDivTitle>
+                <img src={gears} alt="projects title" />
+                <StyledTextTitle>Projects</StyledTextTitle>
+            </StyledDivTitle>
+            <StyledSecondTitle>A select number of projects</StyledSecondTitle>
         </StyledSectionTitle>
     )
 }
+
 
 
 const projects = [
@@ -66,17 +67,38 @@ function ProjectFlex() {
 
 const StyledSectionTitle = styled.div`
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    gap: 8px;
+`
+const StyledDivTitle = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 `
 
+const StyledTextTitle = styled.p`
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.87);
+`
+const StyledSecondTitle = styled.p`
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.87);
+
+`
 
 const StyledProjectsSection = styled.section`
     background-color: #343d68;
-    max-width: 1440px;
-    margin: 0px auto 74px;
-    
-
+    margin-bottom: 74px;
 `
+
 const StyledProjectsContent = styled.div `
     display: flex;
     align-items: center;
@@ -88,8 +110,7 @@ const StyledProjectFlex = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 58px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 40px;
 `
 
 

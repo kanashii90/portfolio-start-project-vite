@@ -81,12 +81,9 @@ function SocialLinks() {
 const StyledFooterSection = styled.footer`
     max-width: 1440px;
     height: 444px;
-    margin: 0 auto;
-
     background-image: url(${wave});
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     align-items: center;
 `;

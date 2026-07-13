@@ -59,7 +59,6 @@ const StyledButton = styled.button `
     font-size: 14px;
     text-align: center;
     color: #fff;
-    padding: 8px 16px 14px;
     margin-top: auto;
 `
 

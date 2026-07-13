@@ -12,7 +12,10 @@ function Skills() {
                 Skills
             </StyledSkillsTitle>
             <StyledSkillsContent>
-                <SkillsList/>
+                <StyledTitleSkillList>
+                    <StyledTitle>I have a vast experience in the following web technologies:</StyledTitle>
+                    <SkillsList/>
+                </StyledTitleSkillList>
                 <SkillImage/>
             </StyledSkillsContent>
 
@@ -31,13 +34,13 @@ const skills = [
     {
         id: 2,
         image: "../../src/assets/images/skills/Group17.svg",
-        description: "Made a simple card page using HTML 5 and  CSS 3",
+        description: "CSS3",
         ImageAlt:"CSS3"
     },
     {
         id: 3,
         image: "../../src/assets/images/skills/Group18.svg",
-        description: "Made an I.P address tracking website.",
+        description: "JavaScript",
         ImageAlt:"JavaScript"
     },
     {
@@ -51,7 +54,7 @@ const skills = [
 
 function SkillsList() {
     return (
-        <div>
+        <StyledSkillList>
             {skills.map(item => (
                 <SkillItem
                     key={item.id}
@@ -59,7 +62,7 @@ function SkillsList() {
                 />
             ))}
 
-        </div>
+        </StyledSkillList>
     )
 }
 
@@ -71,6 +74,13 @@ function SkillImage (){
     )
 }
 
+const StyledSkillList = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+`
+
 const StyledSkillImage = styled.div`
 `
 
@@ -79,13 +89,26 @@ const StyledSkillsTitle = styled.h2`
     font-size: 20px;
     color: #e84949;
     text-align: center;
+    margin-bottom: 30px;
 `
 
 const StyledSkillsSection = styled.section`
-    max-width: 1440px;
-    margin: 0px auto 74px;
+    margin-bottom: 70px;
 `
 const StyledSkillsContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+`
+const StyledTitleSkillList = styled.div`
+
+`
+const StyledTitle = styled.p`
+    font-weight: 400;
+    font-size: 18px;
+    color: #818080;
+    margin-bottom: 40px;
 `
 
 
