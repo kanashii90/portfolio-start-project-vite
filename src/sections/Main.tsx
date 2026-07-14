@@ -34,7 +34,9 @@ function MainInfo() {
             <StyledDescription>
                 I'm <StyledBold>John Doe,</StyledBold> a developer dedicated to making the world a better place one line of code at a time.
             </StyledDescription>
-            <StyledButton>Hire me</StyledButton>
+            <StyledHireLink href="#contact">
+                Hire me
+            </StyledHireLink>
         </StyledMainInfo>
     )
 }
@@ -138,20 +140,20 @@ const StyledHeading = styled.div`
     flex-direction: column;
 `
 
-
-const StyledButton = styled.button`
-    all: unset;
-    border-radius: 4px;
+const StyledHireLink = styled.a`
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 98px;
     height: 42px;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.14);
-    background-color: #e84949;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
+    border-radius: 4px;
+    background: #e84949;
     color: #fff;
+    text-decoration: none;
     cursor: pointer;
-    
+    box-shadow: 0 1px 5px rgba(0,0,0,.2),
+    0 3px 1px rgba(0,0,0,.12),
+    0 2px 2px rgba(0,0,0,.14);
 `
 
 export default Main;
